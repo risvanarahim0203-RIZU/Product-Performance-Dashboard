@@ -1,71 +1,78 @@
-# Multi-Market Sales Intelligence & Product Performance Dashboard
+# 📊 Multi-Market Sales Intelligence & Product Performance Dashboard
 
 ![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX-Data_Modeling-0078D4?style=for-the-badge)
-![Business Intelligence](https://img.shields.io/badge/Business-Intelligence-20232A?style=for-the-badge)
-
-## 1. Project Title
-**Enterprise Sales Intelligence & Global Product Performance Analytics**
-
-## 2. Business Problem Statement
-Organizations operating across multiple product categories and geographical regions often struggle with fragmented data, making it difficult to identify underperforming assets or capitalize on high-growth trends. Without a centralized "Single Source of Truth," leadership lacks the visibility required to optimize supply chains and marketing spend.
-
-This analysis addresses the need for high-level executive visibility and granular operational detail. It is designed for **Sales Directors, Operations Managers, and Senior Financial Analysts** to monitor revenue health, profitability margins, and product lifecycle performance.
-
-## 3. Objective of the Analysis
-The primary goal of this dashboard is to transform raw transactional data into actionable commercial insights. Specifically, it aims to:
-* 📈 **Evaluate** sales and profit performance against historical trends.
-* 🔍 **Identify** high-value product categories and geographic hotspots.
-* 📊 **Optimize** inventory and sales strategies by understanding the relationship between quantity sold and net profitability.
-
-## 4. Dataset Overview
-* **Data Source:** Multi-relational ERP export (Orders, Products, Companies, Geography, and Categories).
-* **Time Period:** January 2021 – April 2025.
-* **Key Entities:** * **Orders:** ~1,200 transactional records (Sales, Cost, Profit, Quantity).
-    * **Products:** 50+ unique SKUs across 5 major categories (Electronics, Fashion, Furniture, Tools, Sporting).
-    * **Geography:** 10 major US market hubs (New York, Seattle, Chicago, etc.).
-
-## 5. Key KPIs
-* **Total Sales** – Gross revenue generated from completed transactions.
-* **Total Profit** – Net earnings after Cost of Goods Sold (COGS) and discounts.
-* **Total Orders** – Volume of transactions, indicating market demand and operational load.
-* **Total Quantity** – Physical volume of units moved, essential for supply chain planning.
-
-## 6. Analysis Approach & Steps
-1. **Data ETL (Power Query):** Cleaned and normalized disparate CSV tables; handled date formatting and established a dedicated `dimDate` table to support Fiscal Year (April–March) reporting.
-2. **Data Modeling:** Developed a **Star Schema** with a central `Orders` fact table connected to dimension tables (`Product`, `City`, `Company`, `Category`) to ensure high-performance filtering.
-3. **DAX Engineering:** Authored measures for Year-to-Date (YTD) totals, Fiscal Year comparisons, and dynamic ranking.
-4. **UI/UX Design:** Implemented a high-contrast, professional interface using a "Top-Down" information hierarchy.
-5. **Selection Logic:** Integrated a dynamic selection parameter allowing users to toggle the entire dashboard view between **Sales, Orders, and Returns**.
-
-## 7. Dashboard Highlights
-* **Executive Summary Tiles:** Provide immediate orientation on four core health metrics.
-* **Sales/Profit by Product (Bar Chart):** Ranks the Top 10 products, allowing managers to identify "Hero SKUs" versus low-margin items.
-* **Geographic Performance (Map):** Visualizes revenue density across city hubs to guide regional marketing efforts.
-* **Trend Analysis (Area Chart):** Tracks performance over time to identify seasonal peaks and cyclical demand shifts.
-
-## 8. Key Findings & Insights
-* **Top Revenue Driver:** The **Camera (P001)** and **Projector (P022)** consistently lead in sales volume, indicating a strong market position in the Electronics category.
-* **Regional Dominance:** **New York (C01)** and **Seattle (C02)** represent the highest sales density, suggesting mature markets with high customer lifetime value.
-* **Profitability Correlation:** High sales volume does not always equate to top-tier profit; certain "Tools" items show higher margins despite lower unit volume.
-* **Temporal Trends:** Significant growth is visible in the 2023–2024 period, with clear month-over-month fluctuations suggesting sensitivity to quarterly procurement cycles.
-
-## 9. Business Impact & Recommendations
-* **Inventory Optimization:** Increase safety stock for Top 5 SKUs in East Coast hubs to prevent stockouts.
-* **Strategic Discounting:** Analyze high-volume/low-profit items to determine if aggressive discounting is eroding the bottom line.
-* **Market Expansion:** Use the success in New York as a blueprint for underperforming regions like Jacksonville or San Jose.
-
-## 10. Tools & Technologies Used
-* **Power BI Desktop:** End-to-end development.
-* **DAX:** Complex measures and time-intelligence logic.
-* **Power Query (M):** Data ETL and schema normalization.
-* **Data Modeling:** Star Schema architecture.
-
-## 11. Project Outcome
-This project demonstrates the ability to take raw, multi-table business data and create a sophisticated, interactive BI solution. It showcases expertise in **Data Modeling, DAX, and Executive-Level Data Storytelling**, providing a tool that turns historical data into forward-looking strategy.
-
-## 12. Author & Portfolio Note
-This project is a core component of my **Professional Data Analytics Portfolio**. It reflects my commitment to delivering high-impact, enterprise-grade business intelligence solutions that drive data-informed decision-making.
+![Power Query](https://img.shields.io/badge/Power_Query-0078D4?style=for-the-badge&logo=microsoftexcel&logoColor=white)
+![Data Analysis](https://img.shields.io/badge/Analysis-Insight-success?style=for-the-badge&logo=analytics)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 ---
-📫 **Connect with me:** [LinkedIn Profile Link] | [Your Portfolio Website]
+
+## 🖥️ Dashboard Showcase
+
+### ⚡ Executive Full View
+*High-level orientation of sales, profit, and order volume across the global portfolio.*
+![Full Dashboard View](https://github.com/risvanarahim0203-RIZU/Product-Performance-Dashboard/blob/main/Dashboard%20Full%20View.PNG?raw=true)
+
+### 📈 Fiscal Year & Regional Deep-Dive
+*Detailed performance tracking using custom Fiscal Year (April-March) logic.*
+![Fiscal Year View](https://github.com/risvanarahim0203-RIZU/Product-Performance-Dashboard/blob/main/Dashboard%20FY%20View.PNG?raw=true)
+
+---
+
+## 🚀 1. Project Title
+**Enterprise Sales Intelligence & Global Product Performance Analytics**
+
+## 🎯 2. Business Problem Statement
+Organizations operating across multiple product categories and geographical regions often struggle with fragmented data, making it difficult to identify underperforming assets or capitalize on high-growth trends. 
+
+This analysis addresses the need for high-level executive visibility and granular operational detail for **Sales Directors and Senior Financial Analysts** to optimize supply chains and marketing spend.
+
+## 🥅 3. Objective of the Analysis
+* 📈 **Performance Tracking:** Evaluate sales and profit performance against historical trends.
+* 🔍 **Market Identification:** Identify high-value product categories and geographic hotspots.
+* ⚖️ **Optimization:** Balance inventory strategies by analyzing the relationship between volume and net profitability.
+
+## 📂 4. Dataset Overview
+* **Source:** Multi-relational ERP export (Orders, Products, Companies, Geography, Categories).
+* **Period:** January 2021 – April 2025.
+* **Scope:** 50+ Unique SKUs, 5 Product Categories, 10 Major US Market Hubs.
+
+## 💎 5. Key KPIs
+* **Total Sales** – Gross revenue generated from transactions.
+* **Total Profit** – Net earnings after Cost of Goods Sold (COGS).
+* **Total Orders** – Transactional volume indicating market demand.
+* **Total Quantity** – Physical units moved for logistics planning.
+
+## 🛠️ 6. Technical Approach
+* ⚙️ **Data ETL:** Normalized disparate CSVs in Power Query and built a `dimDate` table for **Fiscal Year** reporting.
+* 🏗️ **Modeling:** Developed a **Star Schema** with 1:N relationships for optimized filtering.
+* 🧪 **DAX:** Engineered time-intelligence measures (YTD, YoY) and dynamic ranking.
+* 🎛️ **Parameters:** Integrated selection logic to toggle views between **Sales, Orders, and Returns**.
+
+## 💡 7. Key Findings & Insights
+* **Electronics Dominance:** Cameras and Projectors are the primary revenue drivers.
+* **Mature Markets:** New York and Seattle show the highest sales density and stability.
+* **Margin Insight:** Certain "Tools" show higher margins despite lower unit volume.
+* **Growth Trend:** Significant performance spikes identified in the 2023–2024 period.
+
+## 🛠️ 8. Tools & Tech Stack
+| Tool | Usage |
+| :--- | :--- |
+| **Power BI** | Visualization & Dashboarding |
+| **DAX** | Complex Measures & Logic |
+| **Power Query** | ETL & Data Transformation |
+| **GitHub** | Version Control & Documentation |
+
+---
+
+## 👩‍💼 Author & Portfolio
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b5c1-0d3a033f1146.gif" width="100">
+
+**Hello! I'm Risvana.** I am a Data Analytics specialist focused on building enterprise-level Business Intelligence solutions. This project is a core component of my portfolio, showcasing my ability to turn raw data into strategic business value.
+
+📫 **Connect with me:** [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](YOUR_LINKEDIN_URL)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Check_It_Out-EB4034?style=flat&logo=google-chrome&logoColor=white)](YOUR_PORTFOLIO_URL)
+
+---
+*This project is part of my professional data analytics portfolio.*
